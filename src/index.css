@@ -2,13 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+無論如何都會編譯，
+權重大於 base、components、utilities
+*/
+.rdrDateDisplayWrapper{
+  background-color: red;
+}
 
 @layer components{
   /*這行無效*/
-  .rdrDateDisplayWrapper{
+  /* .rdrDateDisplayWrapper{
     background-color: red;
-  }
-
+  } */
+  
   .tailwindTest{
     color: aqua;
   }
